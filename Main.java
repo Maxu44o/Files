@@ -7,25 +7,27 @@ public class Main {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
 
-        File games = new File("D://Games");
+                File games = new File("D://Games");
         sb.append("Dirictory: " + games.getName() + " exists \n");
 
 
-        String src = "D://Games//src";
-        String res = "D://Games//res";
-        String savegames = "D://Games//savegames";
-        String tmp = "D://Games//tmp";
+        String pref = "D://Games";
 
-        String main = "D://Games//src//main";
-        String test = "D://Games//src//test";
+        String src = pref + "//src";
+        String res = pref + "//res";
+        String savegames = pref + "//savegames";
+        String tmp = pref +"//tmp";
 
-        String draw = "D://Games//res//drawables";
-        String vect = "D://Games//res//vectors";
-        String icon = "D://Games//res//icons";
+        String main = pref + "//src//main";
+        String test = pref + "//src//test";
 
-        String tempf = "D://Games//tmp//Temp.txt";
-        String mainf = "D://Games//src//main//Utils.java";
-        String utilsf = "D://Games//tmp//Temp.txt";
+        String draw = pref + "//res//drawables";
+        String vect = pref + "//res//vectors";
+        String icon = pref + "//res//icons";
+
+        String tempf = pref + "//tmp//Temp.txt";
+        String mainf = pref + "//src//main//Utils.java";
+        String utilsf = pref + "//tmp//Temp.txt";
 
 
         createFolder(src, sb);
